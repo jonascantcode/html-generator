@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="border:1px solid black;padding:4px">
+    <div id="container-hat" onclick="showCoords(event)">
+    </div>
+    <div class="container">
+        <p id="coordinates"></p>
+        <h1>Endre bakgrunnsfarge</h1>
+        <label for="farge-input">Skriv inn fargekode:</label>
+        <input type="text" id="farge-input" placeholder="Skriv inn hexcode eller engelsk fargekode">
+        <button id="farge-button">Endre bakgrunnsfarge</button>
+        <hr>
+        <h1>Legg til nytt HTML-element</h1>
+        <label for="element-input">Velg elementtype:</label>
+        <select id="element-input">
+            <option value="div">Div</option>
+            <option value="p">Paragraph</option>
+            <option value="img">Image</option>
+        </select>
+        <label for="element-home">Velg plassering</label>
+        <select id="element-home">
+            <option value="topp">Topp</option>
+            <option value="bunn">Bunn</option>
+        </select>
+        <label for="content-input">Skriv innhold:</label>
+        <textarea id="content-input" placeholder="Skriv innholdet her"></textarea>
+        <button id="element-button">Legg til nytt element</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
